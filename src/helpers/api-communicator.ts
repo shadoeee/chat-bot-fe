@@ -68,7 +68,7 @@ export const getUserChats = async () => {
             if (res.status !== 200) {
                 throw new Error("Unable to send chat");
             }
-            const data = await res.data; 
+            // const data = await res.data; 
             return res.data;
    
 };
@@ -80,7 +80,7 @@ export const deleteUserChats = async () => {
             if (res.status !== 200) {
                 throw new Error("Unable to delete chats");
             }
-            const data = await res.data; 
+            // const data = await res.data; 
             return res.data;
    
 };
@@ -92,7 +92,7 @@ export const logoutUser = async () => {
             if (res.status !== 200) {
                 throw new Error("Unable to delete chats");
             }
-            const data = await res.data; 
+            // const data = await res.data; 
             return res.data;
    
 };

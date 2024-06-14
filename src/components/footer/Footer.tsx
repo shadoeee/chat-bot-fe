@@ -1,7 +1,12 @@
-import React from 'react';
-import { Box, Link } from '@mui/material';
 
-const Footer = ({ sx }) => {
+import { Box, Link } from '@mui/material';
+import { SxProps, Theme } from '@mui/system';
+
+interface FooterProps {
+  sx?: SxProps<Theme>;
+}
+
+const Footer: React.FC<FooterProps> = ({ sx }) => {
   return (
     <Box sx={{ width: "100%", padding:0, minHeight: "auto", maxHeight: "auto", marginTop: 0,marginBottom:-2, color: "white", ...sx }}>
       <p style={{ fontSize: "20px", textAlign: "center",marginBottom: 0,marginTop:5 }}>
